@@ -3,8 +3,12 @@ using namespace std;
     class Tracer {
         int id;
         public:
-        Tracer(int i):id(i){cout<<"construct#"<<id<<endl;}
-        ~Tracer(){cout<<"destruct#"<<id<<endl;}
+        Tracer(int i):id(i){
+            cout<<"construct#"<<id<<endl;
+        }
+        ~Tracer(){
+            cout<<"destruct#"<<id<<endl;
+        }
     };
     int main(){
         cout<<"Enter block\n";
